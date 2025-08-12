@@ -28,7 +28,7 @@
         .container {
             background: rgba(223, 229, 237, 1);
             border-radius: 18px;
-            box-shadow:
+            /* box-shadow:
                 0.9px 0.9px 1.4px rgba(0, 0, 0, 0.042),
                 2.1px 2.1px 3.1px rgba(0, 0, 0, 0.062),
                 3.5px 3.5px 5.2px rgba(0, 0, 0, 0.077),
@@ -48,7 +48,7 @@
                 -15.1px -15.1px 22.6px rgba(255, 255, 255, 0.123),
                 -21.9px -21.9px 32.9px rgba(255, 255, 255, 0.138),
                 -33.8px -33.8px 50.6px rgba(255, 255, 255, 0.158),
-                -60px -60px 90px rgba(255, 255, 255, 0.2);
+                -60px -60px 90px rgba(255, 255, 255, 0.2); */
             padding: 48px 32px 32px 32px;
             max-width: 420px;
             width: 100%;
@@ -149,20 +149,51 @@
             .links-table td {
                 padding: 0;
             }
+            .header {
+                top: 10%;
+                right: 10%;
+                height: 25px;
+                width: 25px;
+            }
+        }
+        .header {
+            position: fixed;
+            top: 65px;
+            right: 65px;
+            height: 71px;
+            width: 181px;
         }
     </style>
-</head>
-
+    <style>
+        p {
+            color: rgb(255, 255, 255)
+        }
+        a {
+            color: rgb(255, 255, 255)
+        }
+    </style>
+    <style>
+        body {
+            transition: 0.5s;
+        }
+    </style>
+    </head>
 <body>
+    <!-- 黑暗模式 -->
+    <script src="js/script.js"></script>
+    <div class="header">
+        <theme-button value="dark" id="btn" size="3"></theme-button>
+
+    </div>
     <!-- 中间 -->
     <div class="main">
-    <div class="container">
+    <div class="container" id="container">
         <img src="quange.jfif" alt="头像" class="avatar">
-        <h1>QUANGE</h1>
+        <h1 id="h1">QUANGE</h1>
         <div class="info">
-            <p>啥也不是、啥也不精、经常半途而废的中学生</p>
-            <p>最爱复制粘贴，催更都不更</p>
-            <p>也发点游戏视频，但是剪的是一坨</p>
+            <p id="info1">啥也不是、啥也不精、经常半途而废的中学生</p>
+            <p id="info2">最爱复制粘贴，催更都不更</p>
+            <p id="info3">也发点游戏视频，但是剪得不行</p>
         </div>
         <table class="links-table">
             <tr>
@@ -189,6 +220,72 @@
         </table>
     </div>
     </div>
-</body>
-
-</html>
+    <script>
+        document.getElementById("info1").style.color = "#2d3a4a";
+        document.getElementById("info2").style.color = "#2d3a4a";
+        document.getElementById("info3").style.color = "#2d3a4a";
+        document.getElementById("container").style.boxShadow =
+            "0.9px 0.9px 1.4px rgba(0, 0, 0, 0.042), " +
+            "2.1px 2.1px 3.1px rgba(0, 0, 0, 0.062), " +
+            "3.5px 3.5px 5.2px rgba(0, 0, 0, 0.077), " +
+            "5.2px 5.2px 7.8px rgba(0, 0, 0, 0.089), " +
+            "7.5px 7.5px 11.3px rgba(0, 0, 0, 0.1), " +
+            "10.6px 10.6px 15.9px rgba(0, 0, 0, 0.111), " +
+            "15.1px 15.1px 22.6px rgba(0, 0, 0, 0.123), " +
+            "21.9px 21.9px 32.9px rgba(0, 0, 0, 0.138), " +
+            "33.8px 33.8px 50.6px rgba(0, 0, 0, 0.158), " +
+            "60px 60px 90px rgba(0, 0, 0, 0.2), " +
+            "-0.9px -0.9px 1.4px rgba(255, 255, 255, 0.042), " +
+            "-2.1px -2.1px 3.1px rgba(255, 255, 255, 0.062), " +
+            "-3.5px -3.5px 5.2px rgba(255, 255, 255, 0.077), " +
+            "-5.2px -5.2px 7.8px rgba(255, 255, 255, 0.089), " +
+            "-7.5px -7.5px 11.3px rgba(255, 255, 255, 0.1), " +
+            "-10.6px -10.6px 15.9px rgba(255, 255, 255, 0.111), " +
+            "-15.1px -15.1px 22.6px rgba(255, 255, 255, 0.123), " +
+            "-21.9px -21.9px 32.9px rgba(255, 255, 255, 0.138), " +
+            "-33.8px -33.8px 50.6px rgba(255, 255, 255, 0.158), " +
+            "-60px -60px 90px rgba(255, 255, 255, 0.2)";
+        btn.addEventListener("change", e => {
+            if (e.detail === 'dark') {
+                document.body.style.backgroundColor = "#424242";
+                document.getElementsByClassName("container")[0].style.backgroundColor = "#424242";
+                document.getElementById("h1").style.color = "#ffffff";
+                document.getElementById("info1").style.color = "#ffffff";
+                document.getElementById("info2").style.color = "#ffffff";
+                document.getElementById("info3").style.color = "#ffffff";
+                document.getElementsByClassName("container")[0].style.boxShadow = "0px 0px 12px 0px rgba(0, 255, 255, 0.7)";
+            }
+            else {
+                document.body.style.backgroundColor = "rgba(223, 229, 237, 1)";
+                document.getElementsByClassName("container")[0].style.backgroundColor = "rgba(223, 229, 237, 1)";
+                document.getElementById("h1").style.color = "#2d3a4a";
+                document.getElementById("info1").style.color = "#2d3a4a";
+                document.getElementById("info2").style.color = "#2d3a4a";
+                document.getElementById("info3").style.color = "#2d3a4a";
+                document.getElementsByClassName("container")[0].style.boxShadow =
+                    "0.9px 0.9px 1.4px rgba(0, 0, 0, 0.042), " +
+                    "2.1px 2.1px 3.1px rgba(0, 0, 0, 0.062), " +
+                    "3.5px 3.5px 5.2px rgba(0, 0, 0, 0.077), " +
+                    "5.2px 5.2px 7.8px rgba(0, 0, 0, 0.089), " +
+                    "7.5px 7.5px 11.3px rgba(0, 0, 0, 0.1), " +
+                    "10.6px 10.6px 15.9px rgba(0, 0, 0, 0.111), " +
+                    "15.1px 15.1px 22.6px rgba(0, 0, 0, 0.123), " +
+                    "21.9px 21.9px 32.9px rgba(0, 0, 0, 0.138), " +
+                    "33.8px 33.8px 50.6px rgba(0, 0, 0, 0.158), " +
+                    "60px 60px 90px rgba(0, 0, 0, 0.2), " +
+                    "-0.9px -0.9px 1.4px rgba(255, 255, 255, 0.042), " +
+                    "-2.1px -2.1px 3.1px rgba(255, 255, 255, 0.062), " +
+                    "-3.5px -3.5px 5.2px rgba(255, 255, 255, 0.077), " +
+                    "-5.2px -5.2px 7.8px rgba(255, 255, 255, 0.089), " +
+                    "-7.5px -7.5px 11.3px rgba(255, 255, 255, 0.1), " +
+                    "-10.6px -10.6px 15.9px rgba(255, 255, 255, 0.111), " +
+                    "-15.1px -15.1px 22.6px rgba(255, 255, 255, 0.123), " +
+                    "-21.9px -21.9px 32.9px rgba(255, 255, 255, 0.138), " +
+                    "-33.8px -33.8px 50.6px rgba(255, 255, 255, 0.158), " +
+                    "-60px -60px 90px rgba(255, 255, 255, 0.2)";
+            }
+        });
+    </script>
+    </body>
+    
+    </html>
