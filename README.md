@@ -15,4 +15,4 @@
 
 [诱球球的作品](https://www.bilibili.com/video/BV19g4y1N7bu/)
 
-目前还有亿点BUG
+目前还有亿点BUG，而且忘了做移动端适配
