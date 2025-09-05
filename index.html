@@ -224,8 +224,6 @@
         }
         
     </style>
-    <!-- 左下角 -->
-    <link rel="stylesheet" type="text/css" href=".\public\assets\waifu.css"/>
 </head>
 
 <body>
@@ -347,41 +345,39 @@
         }
     });
     </script>
-<!-- 左下角 -->
-<div class="waifu">
-    <div class="waifu-tips"></div>
-    <canvas id="live2d" class="live2d"></canvas>
-    <div class="waifu-tool">
-        <span class="fui-home"></span>
-        <span class="fui-chat"></span>
-        <span class="fui-eye"></span>
-        <span class="fui-user"></span>
-        <span class="fui-photo"></span>
-        <span class="fui-info-circle"></span>
-        <span class="fui-cross"></span>
-    </div>
-</div>
-<script src="https://quange.qzz.io/public/assets/waifu-tips.js"></script>
-<script src="https://quange.qzz.io/public/assets/live2d.js"></script>
-<script type="text/javascript">
-    live2d_settings['modelId'] = 1;
-    live2d_settings['modelTexturesId'] = 87;
-    initModel("https://quange.qzz.io/public/assets/waifu-tips.json")
-</script>
-<!-- 鼠标拖尾 -->
-<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-<script>
-    window.addEventListener("load", (event) => {
-        new cursoreffects.fairyDustCursor({
-            colors: ["#eff0e7", "#ffffff", "#dadada"],
-            fairySymbol: "★",
+    <!-- 左下角 -->
+    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"></script>
+    <script>
+        L2Dwidget.on('*', (name) => {
+            console.log('让我康康你在干什么： ' + name)
+        })
+        L2Dwidget.init({
+            dialog: {
+                enable: true,
+                script: {
+                    'tap body': '哎呀！别碰我！真的是的！',
+                    'tap face': '也不是不行嘛~',
+                }
+            }
         });
-    });
-</script>
-<!-- 花瓣 -->
-<script src="https://quange.qzz.io/js/flower.js"></script>
-<!-- 鼠标点击 -->
-<script src="https://quange.qzz.io/js/mouse.js"></script>
-</body>
-
-</html>
+        L2Dwidget.init({
+            "mobile": { "show": true, scale: 0.5 },
+        });
+    </script>
+    <!-- 鼠标拖尾 -->
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script>
+        window.addEventListener("load", (event) => {
+            new cursoreffects.fairyDustCursor({
+                colors: ["#eff0e7", "#ffffff", "#dadada"],
+                fairySymbol: "★",
+            });
+        });
+    </script>
+    <!-- 花瓣 -->
+    <script src="https://quange.qzz.io/js/flower.js"></script>
+    <!-- 鼠标点击 -->
+    <script src="https://quange.qzz.io/js/mouse.js"></script>
+    </body>
+    
+    </html>
