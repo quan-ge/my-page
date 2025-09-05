@@ -16,8 +16,10 @@
             padding: 0;
             font-family: "Segoe UI", "微软雅黑", Arial, sans-serif;
             background: rgba(223, 229, 237, 1);
+            /* 鼠标 */
+            cursor:url(https://quange.qzz.io/mouse/pointer.cur), default;
         }
-    
+
         .main {
             display: flex;
             align-items: center;
@@ -26,7 +28,7 @@
             height: 100%;
             padding: 20px;
         }
-    
+
         .container {
             background: rgba(223, 229, 237, 1);
             border-radius: 18px;
@@ -56,7 +58,7 @@
             width: 100%;
             text-align: center;
         }
-    
+
         .avatar {
             width: 120px;
             height: 120px;
@@ -66,7 +68,7 @@
             border: 2px solid rgba(0, 0, 0, 0.2);
             background: #f3f3fa;
         }
-    
+
         h1 {
             margin: 0 0 8px 0;
             font-size: 2.1em;
@@ -74,24 +76,24 @@
             font-weight: 700;
             letter-spacing: 2px;
         }
-    
+
         .info {
             margin-bottom: 32px;
             color: #5a6270;
             font-size: 1.08em;
         }
-    
+
         .links-table {
             width: 100%;
             border-collapse: separate;
             border-spacing: 12px 16px;
             margin: 0 auto;
         }
-    
+
         .links-table td {
             text-align: center;
         }
-    
+
         .link-btn {
             display: inline-block;
             color: #2d3a4a;
@@ -110,31 +112,31 @@
                 transform 0.15s,
                 box-shadow 0.15s;
         }
-    
+
         .link-btn:hover {
             background: #e0e7ff;
             transform: translateY(-2px) scale(1.04);
             box-shadow: 0 4px 16px rgba(79, 140, 255, 0.15);
         }
-    
+
         #aifadian {
             color: #946ce6;
         }
-    
+
         .logo {
             width: 18px;
             height: 18px;
             object-fit: cover;
         }
-    
+
         #csdn-c {
             color: #fc5531;
         }
-    
+
         #bilibili {
             color: #00a1d6;
         }
-    
+
         #tx {
             /* 博客链接的头像 */
             border-radius: 50%;
@@ -142,7 +144,7 @@
                 0.1px 0.1px 1.4px rgba(0, 0, 0, 0.7),
                 -0.1px -0.1px 3.1px rgba(0, 0, 0, 0.7);
         }
-    
+
         .header {
             position: fixed;
             bottom: 65px;
@@ -150,74 +152,74 @@
             height: 71px;
             width: 181px;
         }
-    
+
         #yfjx {
             /* 你被骗了 */
             color: #FFA07A;
         }
-    
+
         p {
             color: rgb(255, 255, 255)
         }
-    
+
         a {
             color: rgb(255, 255, 255)
         }
-    
+
         body {
             transition: 0.5s;
         }
-    
+
         @media (max-width: 600px) {
             .container {
                 padding: 24px 8px;
                 border-radius: 10px;
             }
-    
+
             .avatar {
                 width: 80px;
                 height: 80px;
             }
-    
+
             .links-table td {
                 padding: 0;
             }
         }
-    
+
         @media (max-width:500px) {
             .github-corner:hover .octo-arm {
                 animation: none
             }
-    
+
             .github-corner .octo-arm {
                 animation: octocat-wave 560ms ease-in-out
             }
         }
         }
-    
+
         @keyframes octocat-wave {
-    
+
             0%,
             100% {
                 transform: rotate(0)
             }
-    
+
             20%,
             60% {
                 transform: rotate(-25deg)
             }
-    
+
             40%,
             80% {
                 transform: rotate(10deg)
             }
-    
-    
+
+
             @media (max-width:500px) {
                 .github-corner:hover .octo-arm {
                     animation: none
                 }
-    
+
                 .github-corner .octo-arm {
                     animation: octocat-wave 560ms ease-in-out
                 }
@@ -234,7 +236,8 @@
     </script>
     <script src="https://quange.qzz.io/js/flower.js"></script>
     <script src="https://quange.qzz.io/js/mouse.js"></script>
-    </head>
+</head>
+
 <body>
     <!-- 角标 -->
     <a href="https://github.com/quan-ge/my-page" target="_blank" class="github-corner"
@@ -255,15 +258,15 @@
     </div>
     <!-- 中间 -->
     <div class="main">
-    <div class="container" id="container">
-        <img src=".\icon\quange.jfif" alt="头像" class="avatar">
-        <h1 id="h1">QUANGE</h1>
-        <div class="info">
-            <p id="info1">啥也不是、啥也不精、经常半途而废的中学生</p>
-            <p id="info2">最爱复制粘贴，催更都不更</p>
-            <p id="info3">也发点游戏视频，但是剪得啥也不是</p>
-        </div>
-        <table class="links-table">
+        <div class="container" id="container">
+            <img src=".\icon\quange.jfif" alt="头像" class="avatar">
+            <h1 id="h1">QUANGE</h1>
+            <div class="info">
+                <p id="info1">啥也不是、啥也不精、经常半途而废的中学生</p>
+                <p id="info2">最爱复制粘贴，催更都不更</p>
+                <p id="info3">也发点游戏视频，但是剪得啥也不是</p>
+            </div>
+            <table class="links-table">
             <tr>
                 <!-- 按钮 -->
                 <td><a class="link-btn" target="_blank" href="https://github.com/quan-ge/mokey-qinglong/blob/main/email.md"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"style="vertical-align:middle;margin-right:4px;"><path d="M4 8.5V16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.5l-8 5.5-8-5.5z" stroke="#2d3a4a" stroke-width="2"fill="none" /><path d="M20 8V8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v.5l8 5.5 8-5.5z" stroke="#2d3a4a" stroke-width="2"fill="none" /></svg>邮箱</a></td>
@@ -285,76 +288,75 @@
                 <td><a class="link-btn" target="_blank" href=".\all">全部社交账号</a></td>
                 <td><a class="link-btn" target="_blank" href=".\qg">QGの网站</a></td>
             </tr>
+</table>
+</div>
+</div>
+<script>
+    document.getElementById("info1").style.color = "#2d3a4a";
+    document.getElementById("info2").style.color = "#2d3a4a";
+    document.getElementById("info3").style.color = "#2d3a4a";
+    document.getElementById("container").style.boxShadow =
+        "0.9px 0.9px 1.4px rgba(0, 0, 0, 0.042), " +
+        "2.1px 2.1px 3.1px rgba(0, 0, 0, 0.062), " +
+        "3.5px 3.5px 5.2px rgba(0, 0, 0, 0.077), " +
+        "5.2px 5.2px 7.8px rgba(0, 0, 0, 0.089), " +
+        "7.5px 7.5px 11.3px rgba(0, 0, 0, 0.1), " +
+        "10.6px 10.6px 15.9px rgba(0, 0, 0, 0.111), " +
+        "15.1px 15.1px 22.6px rgba(0, 0, 0, 0.123), " +
+        "21.9px 21.9px 32.9px rgba(0, 0, 0, 0.138), " +
+        "33.8px 33.8px 50.6px rgba(0, 0, 0, 0.158), " +
+        "60px 60px 90px rgba(0, 0, 0, 0.2), " +
+        "-0.9px -0.9px 1.4px rgba(255, 255, 255, 0.042), " +
+        "-2.1px -2.1px 3.1px rgba(255, 255, 255, 0.062), " +
+        "-3.5px -3.5px 5.2px rgba(255, 255, 255, 0.077), " +
+        "-5.2px -5.2px 7.8px rgba(255, 255, 255, 0.089), " +
+        "-7.5px -7.5px 11.3px rgba(255, 255, 255, 0.1), " +
+        "-10.6px -10.6px 15.9px rgba(255, 255, 255, 0.111), " +
+        "-15.1px -15.1px 22.6px rgba(255, 255, 255, 0.123), " +
+        "-21.9px -21.9px 32.9px rgba(255, 255, 255, 0.138), " +
+        "-33.8px -33.8px 50.6px rgba(255, 255, 255, 0.158), " +
+        "-60px -60px 90px rgba(255, 255, 255, 0.2)";
+    btn.addEventListener("change", e => {
+        if (e.detail === 'dark') {
+            document.body.style.backgroundColor = "#424242";
+            document.getElementsByClassName("container")[0].style.backgroundColor = "#424242";
+            document.getElementById("h1").style.color = "#ffffff";
+            document.getElementById("info1").style.color = "#ffffff";
+            document.getElementById("info2").style.color = "#ffffff";
+            document.getElementById("info3").style.color = "#ffffff";
+            document.getElementsByClassName("container")[0].style.boxShadow = "0px 0px 12px 0px rgba(0, 255, 255, 0.7)";
+        }
+        else {
+            document.body.style.backgroundColor = "rgba(223, 229, 237, 1)";
+            document.getElementsByClassName("container")[0].style.backgroundColor = "rgba(223, 229, 237, 1)";
+            document.getElementById("h1").style.color = "#2d3a4a";
+            document.getElementById("info1").style.color = "#2d3a4a";
+            document.getElementById("info2").style.color = "#2d3a4a";
+            document.getElementById("info3").style.color = "#2d3a4a";
+            document.getElementsByClassName("container")[0].style.boxShadow =
+                "0.9px 0.9px 1.4px rgba(0, 0, 0, 0.042), " +
+                "2.1px 2.1px 3.1px rgba(0, 0, 0, 0.062), " +
+                "3.5px 3.5px 5.2px rgba(0, 0, 0, 0.077), " +
+                "5.2px 5.2px 7.8px rgba(0, 0, 0, 0.089), " +
+                "7.5px 7.5px 11.3px rgba(0, 0, 0, 0.1), " +
+                "10.6px 10.6px 15.9px rgba(0, 0, 0, 0.111), " +
+                "15.1px 15.1px 22.6px rgba(0, 0, 0, 0.123), " +
+                "21.9px 21.9px 32.9px rgba(0, 0, 0, 0.138), " +
+                "33.8px 33.8px 50.6px rgba(0, 0, 0, 0.158), " +
+                "60px 60px 90px rgba(0, 0, 0, 0.2), " +
+                "-0.9px -0.9px 1.4px rgba(255, 255, 255, 0.042), " +
+                "-2.1px -2.1px 3.1px rgba(255, 255, 255, 0.062), " +
+                "-3.5px -3.5px 5.2px rgba(255, 255, 255, 0.077), " +
+                "-5.2px -5.2px 7.8px rgba(255, 255, 255, 0.089), " +
+                "-7.5px -7.5px 11.3px rgba(255, 255, 255, 0.1), " +
+                "-10.6px -10.6px 15.9px rgba(255, 255, 255, 0.111), " +
+                "-15.1px -15.1px 22.6px rgba(255, 255, 255, 0.123), " +
+                "-21.9px -21.9px 32.9px rgba(255, 255, 255, 0.138), " +
+                "-33.8px -33.8px 50.6px rgba(255, 255, 255, 0.158), " +
+                "-60px -60px 90px rgba(255, 255, 255, 0.2)";
+        }
+    });
+</script>
+</body>
 
-        </table>
-    </div>
-    </div>
-    <script>
-        document.getElementById("info1").style.color = "#2d3a4a";
-        document.getElementById("info2").style.color = "#2d3a4a";
-        document.getElementById("info3").style.color = "#2d3a4a";
-        document.getElementById("container").style.boxShadow =
-            "0.9px 0.9px 1.4px rgba(0, 0, 0, 0.042), " +
-            "2.1px 2.1px 3.1px rgba(0, 0, 0, 0.062), " +
-            "3.5px 3.5px 5.2px rgba(0, 0, 0, 0.077), " +
-            "5.2px 5.2px 7.8px rgba(0, 0, 0, 0.089), " +
-            "7.5px 7.5px 11.3px rgba(0, 0, 0, 0.1), " +
-            "10.6px 10.6px 15.9px rgba(0, 0, 0, 0.111), " +
-            "15.1px 15.1px 22.6px rgba(0, 0, 0, 0.123), " +
-            "21.9px 21.9px 32.9px rgba(0, 0, 0, 0.138), " +
-            "33.8px 33.8px 50.6px rgba(0, 0, 0, 0.158), " +
-            "60px 60px 90px rgba(0, 0, 0, 0.2), " +
-            "-0.9px -0.9px 1.4px rgba(255, 255, 255, 0.042), " +
-            "-2.1px -2.1px 3.1px rgba(255, 255, 255, 0.062), " +
-            "-3.5px -3.5px 5.2px rgba(255, 255, 255, 0.077), " +
-            "-5.2px -5.2px 7.8px rgba(255, 255, 255, 0.089), " +
-            "-7.5px -7.5px 11.3px rgba(255, 255, 255, 0.1), " +
-            "-10.6px -10.6px 15.9px rgba(255, 255, 255, 0.111), " +
-            "-15.1px -15.1px 22.6px rgba(255, 255, 255, 0.123), " +
-            "-21.9px -21.9px 32.9px rgba(255, 255, 255, 0.138), " +
-            "-33.8px -33.8px 50.6px rgba(255, 255, 255, 0.158), " +
-            "-60px -60px 90px rgba(255, 255, 255, 0.2)";
-        btn.addEventListener("change", e => {
-            if (e.detail === 'dark') {
-                document.body.style.backgroundColor = "#424242";
-                document.getElementsByClassName("container")[0].style.backgroundColor = "#424242";
-                document.getElementById("h1").style.color = "#ffffff";
-                document.getElementById("info1").style.color = "#ffffff";
-                document.getElementById("info2").style.color = "#ffffff";
-                document.getElementById("info3").style.color = "#ffffff";
-                document.getElementsByClassName("container")[0].style.boxShadow = "0px 0px 12px 0px rgba(0, 255, 255, 0.7)";
-            }
-            else {
-                document.body.style.backgroundColor = "rgba(223, 229, 237, 1)";
-                document.getElementsByClassName("container")[0].style.backgroundColor = "rgba(223, 229, 237, 1)";
-                document.getElementById("h1").style.color = "#2d3a4a";
-                document.getElementById("info1").style.color = "#2d3a4a";
-                document.getElementById("info2").style.color = "#2d3a4a";
-                document.getElementById("info3").style.color = "#2d3a4a";
-                document.getElementsByClassName("container")[0].style.boxShadow =
-                    "0.9px 0.9px 1.4px rgba(0, 0, 0, 0.042), " +
-                    "2.1px 2.1px 3.1px rgba(0, 0, 0, 0.062), " +
-                    "3.5px 3.5px 5.2px rgba(0, 0, 0, 0.077), " +
-                    "5.2px 5.2px 7.8px rgba(0, 0, 0, 0.089), " +
-                    "7.5px 7.5px 11.3px rgba(0, 0, 0, 0.1), " +
-                    "10.6px 10.6px 15.9px rgba(0, 0, 0, 0.111), " +
-                    "15.1px 15.1px 22.6px rgba(0, 0, 0, 0.123), " +
-                    "21.9px 21.9px 32.9px rgba(0, 0, 0, 0.138), " +
-                    "33.8px 33.8px 50.6px rgba(0, 0, 0, 0.158), " +
-                    "60px 60px 90px rgba(0, 0, 0, 0.2), " +
-                    "-0.9px -0.9px 1.4px rgba(255, 255, 255, 0.042), " +
-                    "-2.1px -2.1px 3.1px rgba(255, 255, 255, 0.062), " +
-                    "-3.5px -3.5px 5.2px rgba(255, 255, 255, 0.077), " +
-                    "-5.2px -5.2px 7.8px rgba(255, 255, 255, 0.089), " +
-                    "-7.5px -7.5px 11.3px rgba(255, 255, 255, 0.1), " +
-                    "-10.6px -10.6px 15.9px rgba(255, 255, 255, 0.111), " +
-                    "-15.1px -15.1px 22.6px rgba(255, 255, 255, 0.123), " +
-                    "-21.9px -21.9px 32.9px rgba(255, 255, 255, 0.138), " +
-                    "-33.8px -33.8px 50.6px rgba(255, 255, 255, 0.158), " +
-                    "-60px -60px 90px rgba(255, 255, 255, 0.2)";
-            }
-        });
-    </script>
-    </body>
-    
-    </html>
+</html>
