@@ -1,13 +1,21 @@
 # 我的主页
 
 
-在线网址：[https://quange.qzz.io/](https://quange.qzz.io/)
+网址：[https://quange.qzz.io/](https://quange.qzz.io/)
 
 ----
 
 阴影部分CSS来自
 
 [木折mz](https://space.bilibili.com/794739)
+
+-----
+
+花瓣效果的作者未知
+
+-----
+
+鼠标拖尾来自[90s Cursor Effects](https://github.com/tholman/cursor-effects)
 
 -----
 
