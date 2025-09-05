@@ -193,7 +193,7 @@
                 animation: octocat-wave 560ms ease-in-out
             }
         }
-        }
+        
 
         @keyframes octocat-wave {
 
@@ -211,29 +211,21 @@
             80% {
                 transform: rotate(10deg)
             }
+        }
 
-
-            @media (max-width:500px) {
-                .github-corner:hover .octo-arm {
-                    animation: none
-                }
-
-                .github-corner .octo-arm {
-                    animation: octocat-wave 560ms ease-in-out
-                }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
             }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+        
     </style>
-    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-    <script>
-        window.addEventListener("load", (event) => {
-            new cursoreffects.fairyDustCursor({
-                colors: ["#eff0e7", "#ffffff", "#dadada"],
-                fairySymbol: "★",
-            });
-        });
-    </script>
-    <script src="https://quange.qzz.io/js/flower.js"></script>
-    <script src="https://quange.qzz.io/js/mouse.js"></script>
+    <!-- 左下角 -->
+    <link rel="stylesheet" type="text/css" href=".\public\assets\waifu.css"/>
 </head>
 
 <body>
@@ -257,7 +249,7 @@
     <!-- 中间 -->
     <div class="main">
         <div class="container" id="container">
-            <img src=".\icon\quange.jfif" alt="头像" class="avatar">
+            <img src=".\public\quange.jfif" alt="头像" class="avatar">
             <h1 id="h1">QUANGE</h1>
             <div class="info">
                 <p id="info1">啥也不是、啥也不精、经常半途而废的中学生</p>
@@ -272,15 +264,15 @@
             </tr>
             <tr>
                 <td><a class="link-btn" target="_blank" href="https://www.bilibili.com/video/BV1GJ411x7h7/"><span id="yfjx">优番精选</span></a></td>
-                <td><a class="link-btn" target="_blank" href="https://blogger.quange.dpdns.org/"><img src=".\icon\quange.jfif" alt="quan-ge" class="logo" id="tx">博客</a></td>
+                <td><a class="link-btn" target="_blank" href="https://blogger.quange.dpdns.org/"><img src=".\public\quange.jfif" alt="quan-ge" class="logo" id="tx">博客</a></td>
             </tr>
             <tr>
-                <td><a class="link-btn" target="_blank" id="aifadian" href="https://afdian.com/a/QUAN_GE"> <img src=".\icon\afd.png" alt="aifadianlogo" class="logo">爱发电</a></td>
+                <td><a class="link-btn" target="_blank" id="aifadian" href="https://afdian.com/a/QUAN_GE"> <img src=".\public\afd.png" alt="aifadianlogo" class="logo">爱发电</a></td>
                 <td><a class="link-btn" target="_blank" href="https://blog.csdn.net/quan6_6">🐵<span id="csdn-c">C</span>SDN</a></td>
             </tr>
             <tr>
-                <td><a class="link-btn" target="_blank" id="bilibili" href="https://space.bilibili.com/3493132840733608"><img src=".\icon\bilibili.ico" alt="bilibililogo" class="logo">BiliBili</a></td>
-                <td><a class="link-btn" target="_blank" href="https://www.xiaohongshu.com/user/profile/650c00dc000000001702315d"><img src=".\icon\redbook.ico" alt="redbooklogo" class="logo">小红书</a></td>
+                <td><a class="link-btn" target="_blank" id="bilibili" href="https://space.bilibili.com/3493132840733608"><img src=".\public\bilibili.ico" alt="bilibililogo" class="logo">BiliBili</a></td>
+                <td><a class="link-btn" target="_blank" href="https://www.xiaohongshu.com/user/profile/650c00dc000000001702315d"><img src=".\public\redbook.ico" alt="redbooklogo" class="logo">小红书</a></td>
             </tr>
             <tr>
                 <td><a class="link-btn" target="_blank" href=".\all">全部社交账号</a></td>
@@ -354,7 +346,42 @@
                 "-60px -60px 90px rgba(255, 255, 255, 0.2)";
         }
     });
+    </script>
+<!-- 左下角 -->
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-info-circle"></span>
+        <span class="fui-cross"></span>
+    </div>
+</div>
+<script src="https://quange.qzz.io/public/assets/waifu-tips.js"></script>
+<script src="https://quange.qzz.io/public/assets/live2d.js"></script>
+<script type="text/javascript">
+    live2d_settings['modelId'] = 1;
+    live2d_settings['modelTexturesId'] = 87;
+    initModel("https://quange.qzz.io/public/assets/waifu-tips.json")
 </script>
+<!-- 鼠标拖尾 -->
+<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+<script>
+    window.addEventListener("load", (event) => {
+        new cursoreffects.fairyDustCursor({
+            colors: ["#eff0e7", "#ffffff", "#dadada"],
+            fairySymbol: "★",
+        });
+    });
+</script>
+<!-- 花瓣 -->
+<script src="https://quange.qzz.io/js/flower.js"></script>
+<!-- 鼠标点击 -->
+<script src="https://quange.qzz.io/js/mouse.js"></script>
 </body>
 
 </html>
