@@ -226,12 +226,19 @@
     </style>
 
 </head>
+
 <body>
 
     <script>
-        // 检测移动端跳转
+        // 移动端跳转
         if (/Mobi|Android|Weixin|WeChat|MQQBrowser|UCWEB|Phone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            window.location.href = 'http://quange.qzz.io/m.html';
+            if (!location.href.includes('m.html')) {
+                window.location.replace('http://quange.qzz.io/m.html');
+            }
+        } else {
+            if (location.href.includes('m.html')) {
+                window.location.replace('http://quange.qzz.io/index.html');
+            }
         }
     </script>
     <!-- 角标 -->
