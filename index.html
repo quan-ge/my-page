@@ -255,13 +255,9 @@
     <script>
         // 移动端跳转
         if (/Mobi|Android|Weixin|WeChat|MQQBrowser|UCWEB|Phone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            if (!location.href.includes('m.html')) {
-                window.location.replace('http://quange.qzz.io/m.html');
-            }
+            window.location.replace('http://quange.qzz.io/m');
         } else {
-            if (location.href.includes('m.html')) {
-                window.location.replace('http://quange.qzz.io/index.html');
-            }
+            // window.location.replace('http://quange.qzz.io/');
         }
     </script>
     <!-- 角标 -->
@@ -316,6 +312,7 @@
 </table>
 </div>
 </div>
+<!-- 深色模式 -->
 <script>
     document.getElementById("info1").style.color = "#2d3a4a";
     document.getElementById("info2").style.color = "#2d3a4a";
@@ -382,25 +379,6 @@
         }
     });
     </script>
-    <!-- 左下角 -->
-    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"></script>
-    <script>
-        L2Dwidget.on('*', (name) => {
-            console.log('让我康康你在干什么： ' + name)
-        })
-        L2Dwidget.init({
-            dialog: {
-                enable: true,
-                script: {
-                    'tap body': '哎呀！别碰我！真的是的！',
-                    'tap face': '也不是不行嘛~',
-                }
-            }
-        });
-        L2Dwidget.init({
-            "mobile": { "show": true, scale: 0.5 },
-        });
-    </script>
     <!-- 鼠标拖尾 -->
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <script>
@@ -413,8 +391,6 @@
     </script>
     <!-- 花瓣 -->
     <script src="https://quange.qzz.io/js/flower.js"></script>
-    <!-- 鼠标点击 -->
-    <script src="https://quange.qzz.io/js/mouse.js"></script>
     
     </body>
     </html>
