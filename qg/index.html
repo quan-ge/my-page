@@ -366,25 +366,6 @@
             }
         });
     </script>
-    <!-- 左下角 -->
-    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"></script>
-    <script>
-        L2Dwidget.on('*', (name) => {
-            console.log('让我康康你在干什么： ' + name)
-        })
-        L2Dwidget.init({
-            dialog: {
-                enable: true,
-                script: {
-                    'tap body': '哎呀！别碰我！真的是的！',
-                    'tap face': '也不是不行嘛~',
-                }
-            }
-        });
-        L2Dwidget.init({
-            "mobile": { "show": true, scale: 0.5 },
-        });
-    </script>
     </body>
     
     </html>
